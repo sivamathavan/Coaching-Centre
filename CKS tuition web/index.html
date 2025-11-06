@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CKS Tuition Centre</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">CKS Tuition Centre</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Shaping Tomorrow’s Achievers Today</h1>
+    <p>Personalized coaching for school subjects with expert tutors and proven results.</p>
+    <div class="popup">
+    <button class="btn-popup">Register Now</button>
+    <h5>Click To Register</h5>
+  </div>
+  </section>
+
+  <!-- Overlay and Form -->
+  <div class="overlay"></div>
+
+  <form class="studentform">
+    <span class="close-btn">&times;</span>
+    <label>Name: <input type="text" placeholder="Enter Your Name" required></label>
+    <label>Date Of Birth: <input type="date" required></label>
+
+    <label class="gen">Gender:</label>
+      <div class="gender">
+      <label><input type="radio" name="gender" value="Male"> Male </label>
+      <label><input type="radio" name="gender" value="Female"> Female </label>
+      </div>
+
+    <label>Standard: <input type="text" placeholder="Your Grade" required></label>
+    <label>School: <input type="text" placeholder="Enter School Name" required></label>
+
+    <label>Board:
+      <select required>
+        <option>State Board</option>
+        <option>CBSE</option>
+        <option>ICSE</option>
+        <option>IB</option>
+      </select>
+    </label>
+
+    <label class="subject">Subjects:
+  <select name="subject" multiple id="subjectSelect">
+    <option value="languages">Tamil & English</option>
+    <option value="maths">Maths</option>
+    <option value="biology">Biology</option>
+    <option value="physics">Physics</option>
+    <option value="chemistry">Chemistry</option>
+    <option value="computer">Computer Science</option>
+    <option value="history">History</option>
+    <option value="geography">Geography</option>
+    <option value="economic">Economics</option>
+    <option value="accountancy">Accountancy</option>
+    <option value="commerce">Commerce</option>
+    <option value="businessmaths">Business Maths</option>
+    <option value="statistic">Statistics</option>
+    <option value="businessstudies">Business Maths</option>
+  </select>
+</label>
+
+
+    <input type="submit" value="Send to WhatsApp">
+  </form>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Your Child’s Success Starts Here High-quality coaching for Grades 6–12 across all major boards. We lay the foundation for academic excellence and personal growth.</p>
+  </section>
+
+  <!-- Gallery -->
+  <div class="detail">
+    <div class="img-box">
+      <img src="Images/IMG_12.jpg" alt="Visual Learning">
+      <p>Visual Learning</p>
+    </div>
+    <div class="img-box">
+      <img src="Images/IMG_3.jpg" alt="Reading & Writing">
+      <p>Reading & Writing</p>
+    </div>
+    <div class="img-box">
+      <img src="Images/IMG_4.jpg" alt="Collaborative">
+      <p>Collaborative</p>
+    </div>
+  </div>
+
+  <!-- Services Grid -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">English & Tamil</div>
+      <div class="service-card">Mathematics (6th–12th)</div>
+      <div class="service-card">Physics & Chemistry</div>
+      <div class="service-card">Biology & Computer Science</div>
+      <div class="service-card">Accountancy & Economics</div>
+      
+      <div class="service-card">Exam Preparation (Board & Competitive)</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><i class="fas fa-phone"></i> +91-8124673954</p>
+    <p><i class="fas fa-envelope"></i> chinna.cks@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> Coimbatore, Tamil Nadu</p>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918124673954" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CKS Tuition Centre. All rights reserved.</p>
+    <p>Affiliated with CBSE, ICSE, IGCSE, and Tamil Nadu State Board</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
